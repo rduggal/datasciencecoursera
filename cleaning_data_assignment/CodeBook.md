@@ -28,6 +28,13 @@ The tidy data set was produced from the raw data in following steps :
 
 ## Description of variables :
 
+### subject
+Subject ID
+
+
+### activity
+Name of the activity
+
 ### tbodyacc-mean-xyz, tbodyacc-std-xyz : 
 Subject-wise and activity-wise mean's and Subject-wise and activity-wise mean of the standard deviations for
 the body linear acceleration (time domain) signals.
@@ -58,6 +65,8 @@ The "f" (as against "t") prefix variables are the Fast Fourier Transform (FFT) o
 ## Complete list of Variables in the tidy dataset
 
 
+subject
+activity
 tbodyacc-mean-x
 tbodyacc-mean-y
 tbodyacc-mean-z
@@ -137,3 +146,10 @@ fbodybodygyromag-meanfreq
 fbodybodygyrojerkmag-mean
 fbodybodygyrojerkmag-std
 fbodybodygyrojerkmag-meanfreq
+angletbodyaccmeangravity
+angletbodyaccjerkmeangravitymean
+angletbodygyromeangravitymean
+angletbodygyrojerkmeangravitymean
+anglexgravitymean
+angleygravitymean
+anglezgravitymean

@@ -52,7 +52,7 @@ names(datadf) [1] <- "subject"
 
 
 # 12. Extract the std and mean variables from the merged dataset (alon
-datadf<-select(datadf, grep("subject|activity|std|mean", names(datadf)))
+datadf<-select(datadf, grep("subject|activity|std|mean", names(datadf), ignore.case=T))
 # clean up the names
 names(datadf) <- tolower(sub("()", "", names(datadf), fixed=T))
 
