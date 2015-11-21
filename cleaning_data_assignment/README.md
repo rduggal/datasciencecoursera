@@ -13,7 +13,7 @@
  be run in R or Rstudio with working directory configured to be this directory.
 
  The script will look for files like features.txt, features_info.txt, activity_labels.txt 
- in the working directory. It will aos pick up the test and train data set files from the 
+ in the working directory. It will also pick up the test and train data set files from the 
  "test" and "train" subfolder under the working directory
 
 The script will run and create a file named "final_data.txt" in the working directory
