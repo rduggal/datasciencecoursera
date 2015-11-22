@@ -54,7 +54,7 @@ names(datadf) [1] <- "subject"
 # 12. Extract the std and mean variables from the merged dataset (alon
 datadf<-select(datadf, grep("subject|activity|std|mean", names(datadf), ignore.case=T))
 # clean up the names
-names(datadf) <- tolower(sub("()", "", names(datadf), fixed=T))
+names(datadf) <- tolower(gsub("[()-]+", "", names(datadf), fixed=F))
 
 # 13. Using the exyracted dataset, create a data table and collapse the rows to generate 
 # variable means by subject+activity key
