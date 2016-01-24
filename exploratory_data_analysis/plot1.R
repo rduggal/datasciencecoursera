@@ -1,0 +1,7 @@
+system("head -1 household_power_consumption.txt >h1.txt")
+system("egrep '^(1|2)/2/2007' household_power_consumption.txt >f1.txt")
+system("cat h1.txt f1.txt >filtered.txt")
+household_pc<-read.table("filtered.txt", sep=';', header=T, na.strings = "?")
+png(filename="~/learn/R/exploratory_da/plot1.png", width=480, height=480, units="px")
+hist(household_pc$Global_active_power, col = "red")
+dev.off()
