@@ -50,6 +50,7 @@ multiplot <- function(..., plotlist = NULL, file, cols = 1,
 }
 
 
+# The first 3 lines were executedonce in plot1.R, we re-use the filtered.txt created therefrom
 # system('head -1 household_power_consumption.txt
 # >h1.txt') system('egrep '^(1|2)/2/2007'
 # household_power_consumption.txt >f1.txt')
